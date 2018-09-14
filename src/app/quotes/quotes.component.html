@@ -1,3 +1,11 @@
-<p>
-  quotes works!
-</p>
+<p>Quote component is working</p>
+<h1>Your Awe-inspiring Quotes</h1>
+<ul>
+  <div *ngFor='let quotes of quotes;let i = index'>
+  <li>By: {{quotes.author}} <br> Uploaded by: {{quotes.name}}</li>
+  <button class="btn btn-primary" (click)='toogleDetails(i)'>Toogle details</button>
+
+<app-quote-details *ngIf="quotes.showDescrption" [quotes]='quotes'></app-quote-details>
+</div>
+</ul>
+<app-quotes-form></app-quotes-form>
