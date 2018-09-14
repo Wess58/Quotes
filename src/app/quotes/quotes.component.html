@@ -5,7 +5,7 @@
   <li>By: {{quotes.author}} <br> Uploaded by: {{quotes.name}}</li>
   <button class="btn btn-primary" (click)='toogleDetails(i)'>Toogle details</button>
 
-<app-quote-details *ngIf="quotes.showDescrption" [quotes]='quotes'></app-quote-details>
+<app-quote-details *ngIf="quotes.showDescription" [quotes]='quotes'></app-quote-details>
 </div>
 </ul>
 <app-quotes-form></app-quotes-form>
