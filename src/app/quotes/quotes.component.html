@@ -2,16 +2,20 @@
   <!-- <p>Quote component is working</p> -->
   <h1>Your Awe-inspiring Quotes</h1>
 
-<ul>
-  <div  *ngFor='let quotes of quotes;let i = index'>
-    
-  <li>{{quotes.description}}</li>
-  <button class="btn btn-outline-success" (click)='toogleDetails(i)'>More details</button>
+  <ul>
+    <div *ngFor='let quotes of quotes;let i = index'>
+      <li id="quotes">"{{quotes.description}}"</li>
+      <button class="btn btn-outline-success btn-lg" (click)='toogleDetails(i)'>More details</button>
 
-<app-quote-details *ngIf="quotes.showDescription" [quotes]='quotes'></app-quote-details>
-</div>
+      <app-quote-details *ngIf="quotes.showDescription" [quotes]='quotes'></app-quote-details>
+    </div>
 
-</ul>
-<app-quotes-form (addQuotes)="addNewQuotes($event)" ></app-quotes-form>
+  </ul>
 
 </div>
+<app-quotes-form (addQuotes)="addNewQuotes($event)"></app-quotes-form>
+<footer>
+    <div id="footer" >
+      <p class="contact">Email: wesleymbate@gmail.com<br>Copyright 2018 wesleymbate - All Rights Reserved</p>
+    </div>
+  </footer>
