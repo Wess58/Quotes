@@ -1,4 +1,47 @@
-# Quotes
+# Quotes Angular App
+
+### By wesley Mbate
+
+## Description
+
+ This App helps a user read quotes they've uploaded, upload new quotes and view their likes or dislikes on a quote by other users.
+
+ Here's the link to the live webpage :<>
+
+### Prerequisites
+
+ * An up-to-date browser, preferably chrome or mozilla
+ * Git
+ * Angular CLI
+ * npm
+
+### Technologies used
+
+   * HTML
+   * CSS
+   * TYPESCRIPT
+   * bootstrap
+
+### Installation guide
+
+If your totally new to Git, here's how to go about it:
+
+Install Git on you machine
+ * --Linux Users-- Run the terminal and navigate to the location you'd like the repository in
+ * --for Windows Users-- Navigate to the location you'd want the repository located, right click and select "git bash here"
+ * Clone the repository
+ * Upon completion, navigate to the cloned repository
+
+ ALSO;
+ * follow the angular instructions BELOW.
+
+
+
+
+### LICENSE
+ This website is under the MIT license which can be found [HERE](LICENSE).
+ Copyright (c) 2018 wesleymbate
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.1.
 
