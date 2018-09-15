@@ -1,11 +1,11 @@
 <div class="container">
-  <p>Quote component is working</p>
+  <!-- <p>Quote component is working</p> -->
   <h1>Your Awe-inspiring Quotes</h1>
 
 <ul>
   <div  *ngFor='let quotes of quotes;let i = index'>
-  <li>By: {{quotes.author}} <br> Uploaded by: {{quotes.name}}</li>
-  <button class="btn btn-primary" (click)='toogleDetails(i)'>Toogle details</button>
+  <li>{{quotes.description}}</li>
+  <button class="btn btn-outline-success" (click)='toogleDetails(i)'>More details</button>
 
 <app-quote-details *ngIf="quotes.showDescription" [quotes]='quotes'></app-quote-details>
 </div>
