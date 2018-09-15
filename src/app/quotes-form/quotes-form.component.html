@@ -24,10 +24,10 @@
 
         <label for="name">Enter name</label>
         <input type="text" class="form-control" id="author"
-        [(ngModel)]="newQuotes.author" name="author" placeholder="Author's name" name="author" #author="ngModel" required minlength="12">
+        [(ngModel)]="newQuotes.author" name="author" placeholder="Author's name" name="author" #author="ngModel" required minlength="5">
 
         <div [hidden]="author.valid || author.pristine && !author.errors.minlength " class="alert alert-success" >
-            Name is required! Not less than 10 characters!
+            Name is required! Not less than 5 characters!
         </div>
 
         <!-- test Two-way binding
