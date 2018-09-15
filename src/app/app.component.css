@@ -1,0 +1,33 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+
+h1{
+  font-family: 'Chango', cursive;
+  font-size: 60px;
+  text-shadow: 4px 2px #0e6251;
+}
+nav{
+  background-color: #0e6251;
+
+}
+ul{
+  list-style: none;
+}
+li{
+  width: 3em;
+  padding-left: 0.5em;
+  transition: all .3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  border-radius: 3px;
+}
+li:hover{
+  background-color:  #abebc6;
+
+}
+a{
+  text-decoration: none;
+  color: black;
+
+}
+a:hover{
+  text-decoration: none;
+  color: white;
+}

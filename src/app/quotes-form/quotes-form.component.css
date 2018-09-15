@@ -1,0 +1,16 @@
+.btn-lg{
+    transition: all .5s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.btn-lg:hover{
+  box-shadow: 5px 5px 10px 1px grey;
+  margin-top: 0.2em;
+
+}
+.alert {
+  font-family: 'Pirata One', cursive;
+  font-size: 20px;
+  width: 80%;
+  height: 2em;
+  padding-top: -0.5em;
+}
