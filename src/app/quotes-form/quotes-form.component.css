@@ -1,12 +1,37 @@
-.btn-lg{
-    transition: all .5s cubic-bezier(0.645, 0.045, 0.355, 1);
+.container {
+  font-size: 30px;
+  background-color: #0e6251;
+  border-radius: 5px;
+  padding-bottom: 0.5em;
+  transition: all .4s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
-.btn-lg:hover{
-  box-shadow: 5px 5px 10px 1px grey;
+.container:hover {
+  box-shadow: 15px 20px 25px 2px grey;
+  
+}
+
+label {
+
+}
+
+input {
+  font-size: 30px;
+}
+
+textarea {
+  font-size: 30px;
+}
+
+.btn-lg {
+  transition: all .4s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.btn-lg:hover {
+  box-shadow: 5px 5px 10px 1px black;
   margin-top: 0.2em;
-
 }
+
 .alert {
   font-family: 'Pirata One', cursive;
   font-size: 20px;

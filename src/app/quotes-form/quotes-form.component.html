@@ -2,49 +2,49 @@
   quotes-form works!
 </p> -->
 <div class="container">
-  <div class="row">
-    <form (ngSubmit)='submitQuotes()' #quotesForm='ngForm'>
 
-      <div class="form-group">
+  <form id="mainForm" (ngSubmit)='submitQuotes()' #quotesForm='ngForm'>
 
-        <label for="name">Enter Name</label>
-        <input type="text" class="form-control" id="name" [(ngModel)]="newQuotes.name" name="name" #name="ngModel" placeholder="Your name" required minlength="10">
+    <div class="form-group">
+
+      <label for="name">Enter Name</label>
+      <input type="text" class="form-control" id="name" [(ngModel)]="newQuotes.name" name="name" #name="ngModel" placeholder="Your name" required minlength="10">
 
 
-        <div [hidden]="name.valid || name.pristine && !name.errors.minlength " class="alert alert-success">
-          Name is required! Not less than 10 characters!
-        </div>
+      <div [hidden]="name.valid || name.pristine && !name.errors.minlength " class="alert alert-success">
+        Name is required! Not less than 10 characters!
+      </div>
 
-        <!-- test Two-way binding
+      <!-- test Two-way binding
       Display {{newQuotes.name}} -->
 
 
-      </div>
-      <div class="form-group">
+    </div>
+    <div class="form-group">
 
-        <label for="name">Enter name</label>
-        <input type="text" class="form-control" id="author"
+      <label for="name">Enter name</label>
+      <input type="text" class="form-control" id="author"
         [(ngModel)]="newQuotes.author" name="author" placeholder="Author's name" name="author" #author="ngModel" required minlength="5">
 
-        <div [hidden]="author.valid || author.pristine && !author.errors.minlength " class="alert alert-success" >
-            Name is required! Not less than 5 characters!
-        </div>
+      <div [hidden]="author.valid || author.pristine && !author.errors.minlength " class="alert alert-success">
+        Name is required! Not less than 5 characters!
+      </div>
 
-        <!-- test Two-way binding
+      <!-- test Two-way binding
         Display {{newQuotes.author}} -->
 
-      </div>
-      <div class="form-group">
-        <label for="description">Quote</label>
-        <textarea class="form-control" id="description" [(ngModel)]="newQuotes.description" name="description" #description="ngModel" rows="8" cols="80" placeholder="Enter quote ;)" required minlength="20"></textarea>
+    </div>
+    <div class="form-group">
+      <label for="description">Quote</label>
+      <textarea class="form-control" id="description" [(ngModel)]="newQuotes.description" name="description" #description="ngModel" rows="8" cols="50" placeholder="Enter quote ;)" required minlength="20"></textarea>
 
-          <div [hidden]="description.valid || description.pristine && !description.errors.minlength" class="alert alert-success">
-              Quote is required! Not less than 20 characters!
-          </div>
+      <div [hidden]="description.valid || description.pristine && !description.errors.minlength" class="alert alert-success">
+        Quote is required! Not less than 20 characters!
       </div>
-      <button class="btn btn-outline-success btn-lg" type="Submit" >Submit</button>
-    </form>
+    </div>
+    <button class="btn btn-outline-success btn-lg" type="Submit" >Submit</button>
+  </form>
 
-  </div>
+
 
 </div>
