@@ -9,12 +9,12 @@ import { Quotes } from '../quotes'
 export class QuotesComponent implements OnInit {
   // create the quotes array, plural since the array properties
   quotes = [
-    new Quotes(1, '"Happiness is when what you think, what you say and what you do are in harmony."', 'Mahatma Gandhi', 'Mbate w.g'),
-    new Quotes(2, '“Sorrow spares no one, and scars respect no person.” ', 'Sherrilyn Kenyon', 'Mbate w.g'),
-    new Quotes(3, '“Controversy is a last resort for the talentless.”', ' Criss Jami', 'Mbate w.g'),
-    new Quotes(4, '“Life is pain. Anyone who says differently is selling something.”', 'Sherrilyn Kenyon', 'Mbate w.g'),
-    new Quotes(5, '"Heroes are made by the path they choose, not the powers they are graced with."', 'Iron Man', 'Mbate w.g'),
-    new Quotes(6, '"If you cage the beast, the beast will get angry."', 'Wolverine', 'Mbate w.g'),
+    new Quotes(1, 'Happiness is when what you think, what you say and what you do are in harmony.', 'Mahatma Gandhi', 'Mbate w.g'),
+    new Quotes(2, 'Sorrow spares no one, and scars respect no person. ', 'Sherrilyn Kenyon', 'Mbate w.g'),
+    new Quotes(3, 'Controversy is a last resort for the talentless.', ' Criss Jami', 'Mbate w.g'),
+    new Quotes(4, 'Life is pain. Anyone who says differently is selling something.', 'Sherrilyn Kenyon', 'Mbate w.g'),
+    new Quotes(5, 'Heroes are made by the path they choose, not the powers they are graced with.', 'Iron Man', 'Mbate w.g'),
+    new Quotes(6, 'If you cage the beast, the beast will get angry.', 'Wolverine', 'Mbate w.g'),
 
   ]
   addNewQuotes(quotes) {
