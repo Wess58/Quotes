@@ -1,9 +1,35 @@
 <!-- <p>
   quote-details works!
 </p> -->
-<ul>
+<div class="container">
+  <div class="row">
 
-<li>By: {{quotes.author}} </li>
-<li>Uploaded by: {{quotes.name}}</li>
+    <div class="col-md-8">
 
-</ul>
+      <ul>
+
+        <li>By: {{quotes.author}} </li>
+        <li>Uploaded by: {{quotes.name}}</li>
+
+      </ul>
+    </div>
+    <div class="col-md-4">
+      <div class="row">
+
+        <div class="col-md-6">
+          <button class="btn btn-success">Like</button>
+          <p>likes </p>
+        </div>
+        <div class="col-md-6">
+          <button class="btn btn-success">Dislike</button>
+          <p>Dislikes</p>
+        </div>
+      </div>
+
+
+
+    </div>
+
+
+  </div>
+</div>

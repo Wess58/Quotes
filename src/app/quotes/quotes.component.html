@@ -4,6 +4,7 @@
 
 <ul>
   <div  *ngFor='let quotes of quotes;let i = index'>
+    
   <li>{{quotes.description}}</li>
   <button class="btn btn-outline-success" (click)='toogleDetails(i)'>More details</button>
 
