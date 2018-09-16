@@ -8,6 +8,15 @@ import { Quotes } from '../quotes'
 })
 export class QuoteDetailsComponent implements OnInit {
 
+      // ATTEMPT __START
+        incrementLikes(index){
+          like++;
+        }
+        incrementDislikes(index){
+          like++;
+        }
+        // __END
+
   @Input() quotes:Quotes;
   constructor() { }
 
