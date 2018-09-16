@@ -6,7 +6,7 @@
 
  This App helps a user read quotes they've uploaded, upload new quotes and view their likes or dislikes on a quote by other users.
 
- Here's the link to the live webpage :<>
+ Here's the link to the live webpage :<https://wess58.github.io/Quotes/>
 
 ### Prerequisites
 
