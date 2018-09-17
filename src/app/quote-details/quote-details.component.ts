@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Quotes } from '../quotes'
 
 @Component({
@@ -8,16 +8,21 @@ import { Quotes } from '../quotes'
 })
 export class QuoteDetailsComponent implements OnInit {
 
-      // ATTEMPT __START
-        incrementLikes(index){
-          like++;
-        }
-        incrementDislikes(index){
-          like++;
-        }
-        // __END
-
   @Input() quotes:Quotes;
+  @Output() isComplete= new EventEmitter<boolean>();
+
+quotesDelete(complete:boolean){
+  this.isComplete.emit(complete);  // @Output ()
+
+}
+// ATTEMPT buttons__START
+    incrementLikes(){
+      this.quotes.likes += 1;
+    }
+    incrementDislikes(){
+      this.quotes.dislikes += 1;
+    }
+    // __END
   constructor() { }
 
   ngOnInit() {
