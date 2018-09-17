@@ -7,9 +7,8 @@
       <li id="quotes">"{{quotes.description}}"</li>
       <button class="btn btn-outline-success btn-lg" (click)='toogleDetails(i)'>More details</button>
 
-      <app-quote-details *ngIf="quotes.showDescription" [quotes]='quotes'></app-quote-details>
+      <app-quote-details *ngIf="quotes.showDescription" [quotes]='quotes' (isComplete)= 'deleteQuotes($event,i)'></app-quote-details>
     </div>
-
   </ul>
 
 </div>

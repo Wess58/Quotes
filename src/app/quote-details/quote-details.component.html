@@ -10,7 +10,7 @@
         <li>By: {{quotes.author}} </li>
         <li>Uploaded by: {{quotes.name}}</li>
         <button  class="btn btn-danger" (click) = 'quotesDelete(true)'> Delete</button>
-        
+
 
       </ul>
 
@@ -21,11 +21,11 @@
       <div class="row">
 
         <div class="col-md-6">
-          <button (click)="incrementLikes(i)" class="btn btn-success">Like</button>
+          <button (click)="incrementLikes()" class="btn btn-success">Like</button>
           <p>{{quotes.likes}}</p>
         </div>
         <div class="col-md-6">
-          <button (click)="incrementDislikes(i)" class="btn btn-success">Dislike</button>
+          <button (click)="incrementDislikes()" class="btn btn-success">Dislike</button>
           <p>{{quotes.dislikes}}</p>
         </div>
       </div>
